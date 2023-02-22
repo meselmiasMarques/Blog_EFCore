@@ -16,7 +16,7 @@ namespace Blog
             //     Email = "meselmias@testes.com",
             //     Slug = "meselmias",
             //     Bio = "xpo",
-            //     Image = "https://balta.io",
+            //     Image = "https://meselmias.io",
             //     PasswordHash = "123456"
             // };
 
@@ -40,16 +40,16 @@ namespace Blog
             // db.Posts.Add(post);
             // db.SaveChanges();
 
-            // var posts = db
-            //     .Posts
-            //     .AsNoTracking()
-            //     .Include(x => x.Author)
-            //     .Include(x => x.Category)
-            //     .OrderBy(x => x.LastUpdateDate)
-            //     .ToList();
+            var posts = db
+                .Posts
+                .AsNoTracking()
+                .Include(x => x.Author)
+                .Include(x => x.Category)
+                .OrderBy(x => x.LastUpdateDate)
+                .ToList();
 
-            // foreach (var post in posts)
-            //     System.Console.WriteLine($"{post.Title} escrito por {post.Author?.Name} em {post.Category?.Name}");
+            foreach (var post in posts)
+                System.Console.WriteLine($"{post.Title} escrito por {post.Author?.Name} em {post.Category?.Name}");
 
             // var post = db
             //    .Posts
