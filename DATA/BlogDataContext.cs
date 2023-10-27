@@ -19,7 +19,7 @@ namespace Blog.DATA
         //Conexão 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer("Server=localhost,1433;Database=BlogFluentMapMigration;User ID=sa;Password=Mm@rques0701!;TrustServerCertificate=True");
+            options.UseSqlServer("Server=localhost,1433;Database=BlogFluentMapMigration;User ID=sa;Password=!@#$%¨&;TrustServerCertificate=True");
             //options.LogTo(Console.WriteLine);
         }
 
